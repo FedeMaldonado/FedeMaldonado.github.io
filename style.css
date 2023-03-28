@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    /* background-color: ; */
+}
+
+/*Navegación*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+.navegation {
+    display: fixed;
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    gap: 30px;
+    
+}
+
+.navegation a {  
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navegation a:hover{
+    /* background-color:#E5EAF5 ; */
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 2px 0px #FFCA00;
+}
+
+
+/*Encabezado principal*/
+.contenedor {
+    display: flex;
+    padding: 10px;
+    background-color: #C5BEB4;
+    color: #000000;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+
+.parrafo {
+    font-size: 40px;
+    padding: 20px;
+}
+
+
+.btn-download{
+    display: flex;
+    width: 200px;
+    background-color: #FFCA00;
+    border: 3px solid #1E2425;
+    border-radius: 3px ;
+    margin-top: 20px;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+.btn-download:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+.btn-download a{
+    text-decoration: none;
+    color: #1E2425;
+    font-weight: bold;
+}
+
+.contenedor img {
+    display: flex;
+    float: right;
+    overflow: hidden;
+    align-items: center;
+}
+/*Fin del encabezado principal*/
+
+
+/*CAJA GLOBAL*/
+.caja-global1, .caja-global2, .caja-global3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/*CAJAS*/
+.caja, .caja2, .caja3{
+    display: flex;
+    width: 70%;
+    height: 40%;
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 1px #1E2425;
+    overflow: hidden;
+}
+.articulo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.articulo2{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.caja3 {
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+}
+.articulo3{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.articulo3 ul{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+}
+.articulo3 ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.articulo3 img{
+    display: flex;
+    width: 50px;
+}
+ .imagen{
+    width: 550px;
+    height: 390px;
+}
+
+
+
+
+/*Pie de pagina*/
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #C5BEB4;
+    color: #1E2425;
+    font-weight: bold;
+    height: 10%;
+    text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+footer p {
+    display: flex;
+    font-size: 25px;
+    border-bottom: 2px solid #1E2425;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.iconos img{
+    display: flex;
+    width: 45px;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFCA00;
+    border: 3px solid #1E2425;
+    border-radius:3px;
+    padding: 5px;
+}
+.contacto a{
+    display: flex;
+    text-decoration: none;
+    color: #1E2425;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:768px){
+
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+     }
+
+     
+     .navegation{
+         font-size: 14px;
+         gap: 0px;
+         padding: 2px;
+
+     }
+     .contenedor{
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: 350px;
+        justify-content: center;
+
+     }
+     
+      .contenedor .parrafo p,h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-shadow: #E5EAF5;
+     }
+     .contenedor img{
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        margin: 0px;
+     }
+
+    
+
+
+     .caja-global1, .caja-global2, .caja-global3{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: #1E2425;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        
+     }
+
+     .caja, .caja2, .caja3{
+        display: flex;
+        width: 90%;
+        height: 60%;
+        background-color: #E5EAF5;
+        justify-content:center;
+        border-radius: solid 4px;
+        margin-bottom: 150px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        text-align: center;
+        box-shadow: none;
+    }
+    .articulo, .articulo2, .articulo3{
+        display: flex;
+        flex-direction: column;
+        background-color: #E5EAF5;
+        padding: 10px;
+        height: auto;
+        font-size: 13px;
+        gap: 0px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .articulo h2, .articulo2 h2{
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .imagen{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        flex-direction: column; 
+    }
+
+    .btn-download{
+        display: flex;
+        background-color: #FF6732;
+        border: 3px solid #1E2425;
+        border-radius: 3px ;
+        font-size: 10px;
+        padding: 0px;
+        transition: 0.3s ease;
+        overflow: hidden;
+    }
+
+
+  
+    footer p{
+       display: flex;
+       font-size: 12px;
+       align-items: center;
+    }
+
+    .iconos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    
+    .iconos img{
+        display: flex;
+        width: 25px;
+    }
+    
+    .contacto{
+        border-radius:3px;
+        padding: 3px;
+    }
+    .contacto a{
+        font-size: 12px;
+    }
+    
+
+
+    .caja3 {
+        display: flex;
+        background-color: #E5EAF5;
+        border: 3px solid #E5EAF5;
+        border-radius: 3px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .articulo3 h2{
+        display: flex;
+    }
+
+    .articulo3 ul{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 10px;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .articulo3 ul li{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .articulo3 img{
+        display: flex;
+        width: 30px;
+    }
+
+    
+}
+
+   
