@@ -304,7 +304,7 @@ footer p {
     .articulo, .articulo2, .articulo3{
         display: flex;
         flex-direction: column;
-        background-color: #E5EAF5;
+        background-color: #FFFFFF;
         padding: 10px;
         height: auto;
         font-size: 13px;
